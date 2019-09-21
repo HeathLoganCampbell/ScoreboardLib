@@ -1,5 +1,9 @@
-# ScoreboardLib
+# ScoreboardLib FORK
 A flicker-free scoreboard library with support of text up to 48 characters.
+
+**UPDATE**
+Allows Jitpack to compile it so you can easily add it to your maven pom
+
 
 What is ScoreboardLib?
 --------------
@@ -26,15 +30,17 @@ How do I add it to my project?
 --------------
 Simply add the following to your `pom.xml`.
 
-    <repository>
-      <id>tiger-repo</id>
-      <url>http://repo.tigerhix.me/content/repositories/snapshots/</url>
-    </repository>
+    <repositories>
+	<repository>
+	    <id>jitpack.io</id>
+	    <url>https://jitpack.io</url>
+	</repository>
+    </repositories>
 
     <dependency>
-      <groupId>me.tigerhix.lib</groupId>
-      <artifactId>scoreboard</artifactId>
-      <version>1.0.1-SNAPSHOT</version>
+      <groupId>com.github.HeathLoganCampbell</groupId>
+      <artifactId>ScoreboardLib</artifactId>
+      <version>f67cb528eb</version>
     </dependency>
 
 Now you are able to create your own pretty scoreboards.
